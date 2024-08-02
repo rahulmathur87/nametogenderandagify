@@ -22,8 +22,8 @@ def guess(name):
     return render_template('guess.html', name=name, age=age, gender=gender)
 
 
-@app.route("/blog")
-def get_blog():
+@app.route("/blog/<num>")
+def get_blog(num):
     return render_template('blog.html', data=data)
 
 
